@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -7,9 +8,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <div className="mb-4">
-              <span className="font-serif text-3xl font-semibold text-gold">SRSM</span>
-              <span className="block text-[10px] tracking-[0.35em] text-parchment/50 uppercase mt-0.5">Group</span>
+            <div className="mb-5">
+              <Image
+                src="/images/srsm-logo.png"
+                alt="SRSM Group"
+                width={1536}
+                height={1024}
+                className="h-16 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-sm leading-relaxed text-parchment/60 max-w-xs">
               25+ years of excellence in construction and real estate across Hyderabad, Vizag, and Bangalore.

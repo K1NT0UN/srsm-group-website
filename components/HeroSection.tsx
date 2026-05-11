@@ -48,7 +48,7 @@ export default function HeroSection() {
           Excellence in Construction &amp; Real Estate
         </p>
         <h1 ref={titleRef} className="font-serif text-6xl sm:text-7xl md:text-8xl text-parchment leading-none mb-6">
-          SRSM <span className="text-gold italic">Group</span>
+          SRSM <span className="text-gold font-light">Group</span>
         </h1>
         <p ref={subtitleRef} className="text-parchment/70 text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
           25 years of building trust, quality, and lasting legacies across Hyderabad, Vizag, and Bangalore.

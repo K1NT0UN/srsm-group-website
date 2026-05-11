@@ -15,7 +15,7 @@ export default function HomePage() {
           <FadeInView>
             <p className="text-xs tracking-[0.5em] uppercase text-gold mb-6">Our Purpose</p>
             <h2 className="font-serif text-4xl md:text-5xl text-forest leading-snug mb-8">
-              Built on Trust. <span className="italic text-gold">Delivered with Excellence.</span>
+              Built on Trust. <span className="font-light text-gold">Delivered with Excellence.</span>
             </h2>
             <p className="text-charcoal-light leading-relaxed text-base md:text-lg mb-10">
               For over 25 years, SRSM Group has built homes that stand as testaments to craftsmanship and integrity.
@@ -49,7 +49,7 @@ export default function HomePage() {
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
                   <div>
                     <p className="text-xs tracking-[0.4em] uppercase text-gold/70 mb-2">{project.company}</p>
-                    <h3 className="font-serif text-4xl md:text-5xl text-forest mb-3 italic">{project.name}</h3>
+                    <h3 className="font-serif text-4xl md:text-5xl text-forest mb-3 font-light">{project.name}</h3>
                     <p className="text-charcoal-light text-sm mb-4">{project.location} · {project.type}</p>
                     <p className="text-charcoal-light leading-relaxed max-w-xl">{project.description}</p>
                   </div>
@@ -85,7 +85,7 @@ export default function HomePage() {
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-xs tracking-[0.5em] uppercase text-gold mb-4">Get In Touch</p>
             <h2 className="font-serif text-4xl md:text-5xl text-forest mb-6">
-              Ready to Find Your <span className="italic text-gold">Perfect Home?</span>
+              Ready to Find Your <span className="font-light text-gold">Perfect Home?</span>
             </h2>
             <p className="text-charcoal-light mb-10 leading-relaxed">
               Whether you&apos;re looking to invest, buy, or simply learn more — our team is here to guide you every step of the way.

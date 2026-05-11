@@ -86,7 +86,7 @@ export default function AboutPage() {
           <FadeInView>
             <p className="text-xs tracking-[0.5em] uppercase text-gold mb-4">Who We Are</p>
             <h1 className="font-serif text-5xl md:text-7xl text-parchment leading-tight">
-              About <span className="italic text-gold">SRSM Group</span>
+              About <span className="font-light text-gold">SRSM Group</span>
             </h1>
           </FadeInView>
         </div>
@@ -98,7 +98,7 @@ export default function AboutPage() {
           <FadeInView direction="left">
             <p className="text-xs tracking-[0.5em] uppercase text-gold mb-4">Our Legacy</p>
             <h2 className="font-serif text-4xl text-forest mb-6 leading-snug">
-              25 Years of Building <span className="italic">with Purpose</span>
+              25 Years of Building <span className="font-light">with Purpose</span>
             </h2>
             <p className="text-charcoal-light leading-relaxed mb-5">
               SRSM Group is a Hyderabad-based conglomerate with over 25 years of legacy in construction and real estate development.
@@ -132,7 +132,7 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto text-center">
           <FadeInView>
             <p className="text-xs tracking-[0.5em] uppercase text-gold/70 mb-6">Mission</p>
-            <blockquote className="font-serif text-3xl md:text-4xl text-parchment leading-snug italic mb-8">
+            <blockquote className="font-serif text-3xl md:text-4xl text-parchment leading-snug font-light mb-8">
               &ldquo;To deliver homes and spaces that enrich lives — built with integrity, crafted with precision,
               and rooted in the communities we serve.&rdquo;
             </blockquote>

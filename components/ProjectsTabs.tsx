@@ -56,7 +56,7 @@ export default function ProjectsTabs({ current, pipeline, completed }: Props) {
                 <div key={i} className="max-w-3xl mx-auto bg-parchment border border-gold/30 p-10 relative">
                   <div className="absolute top-0 left-0 w-1 h-full bg-gold" />
                   <p className="text-[10px] tracking-[0.4em] uppercase text-gold/70 mb-2">{p.company}</p>
-                  <h3 className="font-serif text-4xl text-forest italic mb-2">{p.name}</h3>
+                  <h3 className="font-serif text-4xl text-forest font-light mb-2">{p.name}</h3>
                   <p className="text-sm text-charcoal-light mb-4">{p.location} · {p.type}</p>
                   {p.description && <p className="text-charcoal-light leading-relaxed mb-6">{p.description}</p>}
                   <div className="flex flex-wrap gap-6 items-center pt-4 border-t border-gold/10">

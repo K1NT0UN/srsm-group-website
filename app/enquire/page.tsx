@@ -10,7 +10,7 @@ export default function EnquirePage() {
           <FadeInView>
             <p className="text-xs tracking-[0.5em] uppercase text-gold mb-4">We&apos;d Love to Hear From You</p>
             <h1 className="font-serif text-5xl md:text-7xl text-parchment leading-tight">
-              Enquire <span className="italic text-gold">Now</span>
+              Enquire <span className="font-light text-gold">Now</span>
             </h1>
             <p className="text-parchment/60 mt-6 text-base max-w-md mx-auto">
               Fill in the form below and our team will reach out within 24 hours.

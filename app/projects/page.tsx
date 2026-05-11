@@ -11,7 +11,7 @@ export default function ProjectsPage() {
           <FadeInView>
             <p className="text-xs tracking-[0.5em] uppercase text-gold mb-4">Our Portfolio</p>
             <h1 className="font-serif text-5xl md:text-7xl text-parchment leading-tight">
-              Every Project, <span className="italic text-gold">a Legacy</span>
+              Every Project, <span className="font-light text-gold">a Legacy</span>
             </h1>
             <p className="text-parchment/60 mt-6 text-base max-w-xl mx-auto">
               From Hyderabad to Vizag to Bangalore — 24+ delivered projects and a pipeline that keeps growing.
