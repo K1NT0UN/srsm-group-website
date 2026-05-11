@@ -14,7 +14,7 @@ export default function Footer() {
                 alt="SRSM Group"
                 width={1536}
                 height={1024}
-                className="h-16 w-auto object-contain brightness-0 invert"
+                className="h-[90px] w-auto object-contain"
               />
             </div>
             <p className="text-sm leading-relaxed text-parchment/60 max-w-xs">
