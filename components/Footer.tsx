@@ -14,7 +14,7 @@ export default function Footer() {
                 alt="SR Builders and Developers"
                 width={2000}
                 height={1545}
-                className="h-[64px] w-auto object-contain"
+                className="h-[192px] w-auto object-contain"
               />
             </div>
             <p className="text-sm leading-relaxed text-parchment/60 max-w-xs">

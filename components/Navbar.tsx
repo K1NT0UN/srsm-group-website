@@ -33,7 +33,7 @@ export default function Navbar() {
           : 'bg-parchment/95 backdrop-blur-sm'
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-18 py-3">
+      <nav className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between py-4">
         {/* Logo — dark version for off-white background */}
         <Link href="/" className="flex items-center">
           <Image
