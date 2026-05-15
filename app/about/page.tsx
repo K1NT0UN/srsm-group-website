@@ -79,7 +79,7 @@ export default function AboutPage() {
           <FadeInView>
             <p className="text-xs tracking-[0.5em] uppercase text-gold mb-4">Who We Are</p>
             <h1 className="font-serif text-5xl md:text-7xl text-parchment leading-tight">
-              About <span className="font-light text-gold">SR Builders</span>
+              About <span className="font-light text-gold">SRSM Group</span>
             </h1>
           </FadeInView>
         </div>
@@ -94,7 +94,7 @@ export default function AboutPage() {
               Built on Trust. <span className="font-light text-gold">Delivered with Excellence.</span>
             </h2>
             <p className="text-charcoal-light leading-relaxed text-base md:text-lg">
-              For over 25 years, SR Builders and Developers has built homes that stand as testaments to craftsmanship and integrity.
+              For over 25 years, SRSM Group has built homes that stand as testaments to craftsmanship and integrity.
               Debt-free, in-house engineered, and community-focused — we don&apos;t just construct buildings,
               we shape neighbourhoods.
             </p>
@@ -111,13 +111,13 @@ export default function AboutPage() {
               25 Years of Building <span className="font-light">with Purpose</span>
             </h2>
             <p className="text-charcoal-light leading-relaxed mb-5">
-              SR Builders and Developers is a Hyderabad-based real estate developer with over 25 years of legacy in construction
+              SRSM Group is a Hyderabad-based real estate developer with over 25 years of legacy in construction
               and real estate development. Operating through three active legal entities, the Group has delivered 24+ residential
               and commercial projects across Hyderabad, Vizag, and Bangalore.
             </p>
             <p className="text-charcoal-light leading-relaxed">
               The Group has built its reputation on quality construction, timely delivery, and a customer-first philosophy.
-              With a strong pipeline of upcoming projects across Hyderabad, SR Builders is poised for its next phase of significant growth.
+              With a strong pipeline of upcoming projects across Hyderabad, SRSM Group is poised for its next phase of significant growth.
             </p>
           </FadeInView>
 
