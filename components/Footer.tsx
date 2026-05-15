@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <div className="mb-5">
+            <div className="mb-5 overflow-visible">
               <Image
                 src="/images/sr-builders-logo-light.png"
                 alt="SR Builders and Developers"
