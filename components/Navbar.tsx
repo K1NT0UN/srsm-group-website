@@ -27,27 +27,27 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-visible ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-parchment shadow-md'
           : 'bg-parchment/95 backdrop-blur-sm'
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 lg:px-12 flex items-start justify-between h-18 pt-1">
-        {/* Logo — anchored to top of nav, overflows below */}
-        <Link href="/" className="flex items-start relative z-10">
+      <nav className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-18">
+        {/* Logo */}
+        <Link href="/" className="flex items-center">
           <Image
             src="/images/sr-builders-logo.png"
             alt="SR Builders and Developers"
             width={2000}
             height={1545}
-            className="h-[192px] w-auto object-contain drop-shadow-sm"
+            className="h-14 w-auto object-contain drop-shadow-sm"
             priority
           />
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-10 self-center">
+        <div className="hidden md:flex items-center gap-10">
           {links.map(({ href, label }) => (
             <Link
               key={href}
@@ -74,7 +74,7 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2 self-center"
+          className="md:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
