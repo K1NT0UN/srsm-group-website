@@ -308,12 +308,12 @@ export default function NisargaPageContent() {
           </FadeInView>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-14">
-            <FadeInView direction="left" className="relative aspect-[4/3] overflow-hidden">
+            <FadeInView direction="left" className="relative aspect-[6/5] overflow-hidden">
               <Image
                 src="/images/nisarga/location-map.jpg"
                 alt="Nisarga location map"
                 fill
-                className="object-cover object-top"
+                className="object-contain object-center"
               />
             </FadeInView>
             <FadeInView direction="right">
