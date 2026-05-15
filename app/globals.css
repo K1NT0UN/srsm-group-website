@@ -25,3 +25,8 @@ body {
 h1, h2, h3, h4 {
   font-family: var(--font-serif);
 }
+
+@keyframes kenburns {
+  from { transform: scale(1) translate(0, 0); }
+  to   { transform: scale(1.08) translate(-1%, -0.5%); }
+}
