@@ -41,7 +41,7 @@ export default function Navbar() {
             alt="SR Builders and Developers"
             width={2000}
             height={1545}
-            className="h-[64px] w-auto object-contain"
+            className="h-[192px] w-auto object-contain"
             priority
           />
         </Link>
