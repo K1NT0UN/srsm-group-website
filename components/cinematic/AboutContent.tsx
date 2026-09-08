@@ -62,7 +62,7 @@ const LEADERSHIP: { name: string; role: string; note: string; image?: string }[]
   {
     name: 'Raavi Chidvilas',
     role: 'Head of Marketing',
-    note: 'B.S. Civil Engineering, NC State University',
+    note: 'B.S. Civil Engineering, NC State University, USA',
     image: '/images/leadership/chidvilas.webp',
   },
 ]
