@@ -130,7 +130,7 @@ srsm-group-website/
 2. Yashwanth Raavi — Co-Director, Projects & Development
 3. Manaswitha Raavi — In-house Architect, Design & Planning
 4. Raavi Rishi Chowdary — Director, Strategy & Investments
-5. Raavi Chidvilas — Director, Business Development & Growth
+5. Raavi Chidvilas — Head of Marketing
 
 ### Projects Data (`lib/projects.ts`)
 **Current (3):** Nisarga (SR Builders, Kollur, township villas, 2028) · Nagole Villas · Medchal Commercial
