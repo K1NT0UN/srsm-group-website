@@ -9,8 +9,9 @@ import { nisargaWhatsApp } from '@/lib/contact'
 type FloorAreas = { areas: { floor: string; sqft: string }[]; total: string }
 type Villa = { size: string; tagline: string; east: FloorAreas; west: FloorAreas }
 
-// A single starting price for the collection, not a per-sq-ft rate: the
-// built-up areas are not final, so anything derived from them would move.
+// The collection's entry price (the 200 Sq. Yd villa), not a per-sq-ft rate
+// and not a per-plot price: 239 and 300 start higher. The built-up areas are
+// not final, so anything derived from them would move.
 // East facing, corner and garden-view plots all cost more; those differences
 // stay a WhatsApp conversation rather than a table. See AGENTS.md.
 const STARTING_PRICE = '₹4.3 Cr'
@@ -190,11 +191,12 @@ export default function Villas() {
           })}
 
 
-          {/* Starting price — common to every plot, so it belongs to the
-              collection rather than to any single villa. Full-width row inside
-              the same grid, so the 1px divider reads it as the tiles' footer.
-              The figure itself no longer moves with the facing toggle; the
-              toggle still drives the floor areas above.
+          {/* Entry price for the collection — the 200 Sq. Yd villa. The 239
+              and 300 start higher, so this is deliberately "starting from" and
+              NOT a price that applies to every plot; don't reword it into one.
+              Full-width row inside the same grid, so the 1px divider reads it
+              as the tiles' footer. The figure does not move with the facing
+              toggle; the toggle still drives the floor areas above.
               NOTE: east facing, corner and garden-view plots all carry
               additional charges. Those are deliberately NOT itemised here — the
               page shows the entry price and sends the buyer to the team for the
@@ -204,7 +206,7 @@ export default function Villas() {
             <div className="flex flex-col gap-7 p-10 md:flex-row md:items-end md:justify-between md:p-12">
               <div>
                 <p className="font-body text-[10px] font-medium uppercase tracking-[0.35em] text-ivory/55">
-                  Starting price · all plots
+                  Starting from
                 </p>
                 <p className="mt-3 flex items-baseline gap-2 font-body font-semibold tabular-nums tracking-[-0.02em] text-aurum">
                   <span className="text-[clamp(2.1rem,4.2vw,3.1rem)] leading-none">
