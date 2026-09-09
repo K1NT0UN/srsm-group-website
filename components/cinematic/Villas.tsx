@@ -104,7 +104,7 @@ export default function Villas() {
           </h2>
           <Reveal delay={0.25} className="max-w-sm">
             <p className="font-body text-sm font-light leading-relaxed text-ink/70">
-              4 &amp; 5 BHK forestscape villas, G+2, facing east or west — every one of them
+              4 BHK forestscape villas with a home theatre, G+2, facing east or west — every one
               opening onto green.
             </p>
           </Reveal>

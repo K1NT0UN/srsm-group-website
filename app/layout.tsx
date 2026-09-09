@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/' },
   title: 'SRSM Group | Where Life Finds Its Place',
   description:
-    'SRSM Group — a Hyderabad real estate group with 25+ years of legacy and 24+ completed projects. Now crafting Nisarga: 4 & 5 BHK forestscape villas on 17+ acres in Kollur.',
+    'SRSM Group — a Hyderabad real estate group with 25+ years of legacy and 24+ completed projects. Now crafting Nisarga: 4 BHK forestscape villas with home theatre on 17+ acres in Kollur.',
   openGraph: {
     title: 'SRSM Group | Where Life Finds Its Place',
     description:

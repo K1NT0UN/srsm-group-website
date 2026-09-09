@@ -12,9 +12,9 @@ import { currentProjects, pipelineProjects, completedProjects } from '@/lib/proj
 
 const NISARGA_FACTS = [
   { value: '17+', label: 'Acres' },
-  { value: '4 & 5 BHK', label: 'Villas · G+2' },
+  { value: '4 BHK', label: 'Home Theatre · G+2' },
   { value: '2', label: 'Clubhouses' },
-  { value: '2028', label: 'Target Completion' },
+  { value: '2029', label: 'Target Completion' },
 ]
 
 export default function ProjectsContent() {

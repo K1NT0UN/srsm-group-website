@@ -26,13 +26,13 @@ const MILESTONES = [
     body: 'Our in-house engineering team on site, executing debt-free and self-funded.',
   },
   {
-    marker: '2028',
+    marker: '2029',
     title: 'Target completion',
     body: 'Keys to the first families of Nisarga.',
   },
 ]
 
-/** Trust, drawn as a single line from 1999 to 2028. */
+/** Trust, drawn as a single line from 1999 to 2029. */
 export default function Progress() {
   const lineRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({

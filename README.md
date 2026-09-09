@@ -133,7 +133,7 @@ srsm-group-website/
 5. Raavi Chidvilas — Head of Marketing
 
 ### Projects Data (`lib/projects.ts`)
-**Current (3):** Nisarga (SR Builders, Kollur, township villas, 2028) · Nagole Villas · Medchal Commercial
+**Current (3):** Nisarga (SR Builders, Kollur, township villas, 2029) · Nagole Villas · Medchal Commercial
 **Pipeline (5):** Highrise Apartments (Kollur, **name TBD**, 2030) · Borampet Villas · Bashirbag Commercial · Chandanagar Commercial · Lingampally Residences
 **Completed:** 24 projects across SR Builders, SM Builders, SM Builders & Developers, SM Projects, SM Constructions, SM Infra Developers
 

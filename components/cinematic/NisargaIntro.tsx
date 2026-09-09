@@ -7,7 +7,7 @@ import { Eyebrow, ImageReveal, MaskLine, Reveal } from './motion'
 
 const FACTS = [
   { value: '17+', label: 'Acres' },
-  { value: '4 & 5 BHK', label: 'Villas · G+2' },
+  { value: '4 BHK', label: 'Home Theatre · G+2' },
   { value: '50+', label: 'Amenities' },
   { value: '2', label: 'Clubhouses' },
 ]
