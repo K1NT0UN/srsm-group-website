@@ -9,15 +9,11 @@ import { nisargaWhatsApp } from '@/lib/contact'
 type FloorAreas = { areas: { floor: string; sqft: string }[]; total: string }
 type Villa = { size: string; tagline: string; east: FloorAreas; west: FloorAreas }
 
-// Rate per sq. ft on built-up area. West is the base; east carries a Vastu
-// premium. We show the RATE and never the computed total — totals, specs and
-// payment plans are deliberately a WhatsApp conversation, and the built-up
-// areas above are not final. See AGENTS.md.
-const EAST_PREMIUM = 300
-const BASE_RATE = 12999
-const RATES = { west: BASE_RATE, east: BASE_RATE + EAST_PREMIUM } as const
-
-const inr = (n: number) => `₹${n.toLocaleString('en-IN')}`
+// A single starting price for the collection, not a per-sq-ft rate: the
+// built-up areas are not final, so anything derived from them would move.
+// East facing, corner and garden-view plots all cost more; those differences
+// stay a WhatsApp conversation rather than a table. See AGENTS.md.
+const STARTING_PRICE = '₹4.3 Cr'
 
 // Floor areas per the brochure. 200 Sq. Yd is identical for both facings;
 // 239 and 300 differ between east and west.
@@ -86,8 +82,8 @@ const VILLAS: Villa[] = [
 
 /** The collection — three sizes, one standard; East/West areas per the brochure. */
 export default function Villas() {
-  // Opens on west: it is the base rate (Rs 12,999), so the first figure a
-  // visitor sees is the headline number rather than the east premium.
+  // Opens on west: it is the base configuration, so the first areas a
+  // visitor sees are the base ones rather than the east-premium ones.
   const [facing, setFacing] = useState<'east' | 'west'>('west')
 
   return (
@@ -194,35 +190,37 @@ export default function Villas() {
           })}
 
 
-          {/* Base price — the starting rate, common to every plot, so it belongs
-              to the collection rather than to any single villa. Full-width row
-              inside the same grid, so the 1px divider reads it as the tiles'
-              footer. Still driven by the facing toggle: west is the base, east
-              adds the premium.
-              NOTE: corner and garden-view plots carry additional charges. Those
-              are deliberately NOT itemised here — the page shows the base rate
-              and sends the buyer to the team for the full breakdown. Do not add
-              a "same rate for every plot" line back in; it is not true. */}
+          {/* Starting price — common to every plot, so it belongs to the
+              collection rather than to any single villa. Full-width row inside
+              the same grid, so the 1px divider reads it as the tiles' footer.
+              The figure itself no longer moves with the facing toggle; the
+              toggle still drives the floor areas above.
+              NOTE: east facing, corner and garden-view plots all carry
+              additional charges. Those are deliberately NOT itemised here — the
+              page shows the entry price and sends the buyer to the team for the
+              full breakdown. Do not add a "same price for every plot" line back
+              in; it is not true. */}
           <Reveal delay={0.4} className="bg-[#0c2340] md:col-span-3">
             <div className="flex flex-col gap-7 p-10 md:flex-row md:items-end md:justify-between md:p-12">
               <div>
                 <p className="font-body text-[10px] font-medium uppercase tracking-[0.35em] text-ivory/55">
-                  Base price · all plots
+                  Starting price · all plots
                 </p>
                 <p className="mt-3 flex items-baseline gap-2 font-body font-semibold tabular-nums tracking-[-0.02em] text-aurum">
                   <span className="text-[clamp(2.1rem,4.2vw,3.1rem)] leading-none">
-                    {inr(RATES[facing])}
+                    {STARTING_PRICE}
                   </span>
                   <span className="font-body text-xs font-medium tracking-[0.06em] text-ivory/60">
-                    / sq.ft
+                    onwards
                   </span>
                 </p>
               </div>
               <p className="max-w-md font-body text-xs font-light leading-relaxed text-ivory/65 md:text-right">
                 {facing === 'east'
-                  ? `East facing — the ${inr(BASE_RATE)} base rate plus a ${inr(EAST_PREMIUM)} per sq.ft premium.`
-                  : `West facing — the ${inr(BASE_RATE)} base rate.`}{' '}
-                Reach out to our team for a detailed breakdown.
+                  ? 'East facing — a premium over the west-facing base.'
+                  : 'West facing — the base configuration.'}{' '}
+                Corner and garden-view plots carry additional charges. Reach out
+                to our team for a detailed breakdown.
               </p>
             </div>
           </Reveal>
